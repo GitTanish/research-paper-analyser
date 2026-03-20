@@ -6,6 +6,13 @@ Built as a technical assignment for **Vilambo Private Limited**.
 
 ---
 
+## 🎨 UI Overview
+
+![UI Overview 1](Image/1.png)
+![UI Overview 2](Image/2.png)
+
+---
+
 ## 🏗️ Architecture
 
 ```
