@@ -1,0 +1,312 @@
+2026-03-19 00:16:57,734 [ERROR] Failed to get supported params: argument of type 'NoneType' is not iterable
+2026-03-19 00:16:57,767 [ERROR] Failed to get supported params: argument of type 'NoneType' is not iterable
+2026-03-19 00:16:57,775 [ERROR] Failed to get supported params: argument of type 'NoneType' is not iterable
+2026-03-19 00:16:57,783 [ERROR] Failed to get supported params: argument of type 'NoneType' is not iterable
+2026-03-19 00:16:57,784 [ERROR] Failed to get supported params: argument of type 'NoneType' is not iterable
+2026-03-19 00:16:57,806 [ERROR] LiteLLM call failed: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=llama-3.3-70b-versatile
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+2026-03-19 00:16:57,807 [ERROR] Failed to get supported params: argument of type 'NoneType' is not iterable
+2026-03-19 00:16:57,819 [ERROR] LiteLLM call failed: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=llama-3.3-70b-versatile
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+2026-03-19 00:16:57,820 [ERROR] Failed to get supported params: argument of type 'NoneType' is not iterable
+2026-03-19 00:16:57,834 [ERROR] LiteLLM call failed: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=llama-3.3-70b-versatile
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+📥 Loading paper...
+✅ Loaded 1,332 chars from test_paper.txt
+
+[START] Starting multi-agent pipeline...
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+  📄 Starting Paper Analysis...
+  🔄 Running Paper Analysis agent (attempt 1/3)...
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+[1m[95m# Agent:[00m [1m[92mResearch Paper Analyst[00m
+[95m## Task:[00m [92m
+Analyze the following research paper and extract structured information.
+
+PAPER TEXT:
+# Test Paper: The Impact of Artificial Intelligence on Small-Scale Farming
+
+## Abstract
+This paper explores how low-cost AI solutions can improve crop yields for small-scale farmers in developing regions. We propose a mobile-based image recognition system for pest detection.
+
+## Introduction
+Small-scale farming accounts for 80% of food production in sub-Saharan Africa. However, pests destroy up to 40% of crops annually. Existing solutions are expensive or require constant internet access.
+
+## Methodology
+We developed 'FarmerNet', a lightweight convolutional neural network (CNN) that runs locally on Android devices. We trained it on a dataset of 5,000 images of diseased cassava leaves.
+
+## Experiments
+We deployed FarmerNet in 10 pilot farms in Uganda over 6 months. Farmers used the app to identify pests and received immediate organic treatment recommendations.
+
+## Findings
+Farms using FarmerNet saw a 25% increase in yield compared to the control group. The model achieved a 92% accuracy in identifying the variegated grasshopper, the most common pest.
+
+## Conclusion
+FarmerNet demonstrates that edge-AI can empower small-scale farmers without requiring high-end hardware.
+
+## References
+[1] Smith, J. (2022). AI for Good. Journal of Agri-Tech, 45(2), 112-120.
+[2] Uganda Agricultural Board. (2023). Annual Crop Report.
+  
+
+Return a JSON object with EXACTLY these fields:
+{
+  "title": "paper title",
+  "authors": ["author1", "author2"],
+  "year": "publication year or 'Unknown'",
+  "venue": "journal/conference or 'Unknown'",
+  "problem_statement": "what problem does this paper solve",
+  "hypothesis": "the main hypothesis or research question",
+  "methodology": "detailed description of the approach/method used",
+  "experiments": "what experiments or studies were conducted",
+  "key_findings": ["finding 1", "finding 2", "finding 3"],
+  "limitations": "known limitations mentioned in the paper"
+}
+
+Be precise and faithful to the source text. Do not hallucinate details not present in the paper.
+[00m
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+[1m[95m# Agent:[00m [1m[92mResearch Paper Analyst[00m
+[95m## Task:[00m [92m
+Analyze the following research paper and extract structured information.
+
+PAPER TEXT:
+# Test Paper: The Impact of Artificial Intelligence on Small-Scale Farming
+
+## Abstract
+This paper explores how low-cost AI solutions can improve crop yields for small-scale farmers in developing regions. We propose a mobile-based image recognition system for pest detection.
+
+## Introduction
+Small-scale farming accounts for 80% of food production in sub-Saharan Africa. However, pests destroy up to 40% of crops annually. Existing solutions are expensive or require constant internet access.
+
+## Methodology
+We developed 'FarmerNet', a lightweight convolutional neural network (CNN) that runs locally on Android devices. We trained it on a dataset of 5,000 images of diseased cassava leaves.
+
+## Experiments
+We deployed FarmerNet in 10 pilot farms in Uganda over 6 months. Farmers used the app to identify pests and received immediate organic treatment recommendations.
+
+## Findings
+Farms using FarmerNet saw a 25% increase in yield compared to the control group. The model achieved a 92% accuracy in identifying the variegated grasshopper, the most common pest.
+
+## Conclusion
+FarmerNet demonstrates that edge-AI can empower small-scale farmers without requiring high-end hardware.
+
+## References
+[1] Smith, J. (2022). AI for Good. Journal of Agri-Tech, 45(2), 112-120.
+[2] Uganda Agricultural Board. (2023). Annual Crop Report.
+  
+
+Return a JSON object with EXACTLY these fields:
+{
+  "title": "paper title",
+  "authors": ["author1", "author2"],
+  "year": "publication year or 'Unknown'",
+  "venue": "journal/conference or 'Unknown'",
+  "problem_statement": "what problem does this paper solve",
+  "hypothesis": "the main hypothesis or research question",
+  "methodology": "detailed description of the approach/method used",
+  "experiments": "what experiments or studies were conducted",
+  "key_findings": ["finding 1", "finding 2", "finding 3"],
+  "limitations": "known limitations mentioned in the paper"
+}
+
+Be precise and faithful to the source text. Do not hallucinate details not present in the paper.
+[00m
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+[1m[95m# Agent:[00m [1m[92mResearch Paper Analyst[00m
+[95m## Task:[00m [92m
+Analyze the following research paper and extract structured information.
+
+PAPER TEXT:
+# Test Paper: The Impact of Artificial Intelligence on Small-Scale Farming
+
+## Abstract
+This paper explores how low-cost AI solutions can improve crop yields for small-scale farmers in developing regions. We propose a mobile-based image recognition system for pest detection.
+
+## Introduction
+Small-scale farming accounts for 80% of food production in sub-Saharan Africa. However, pests destroy up to 40% of crops annually. Existing solutions are expensive or require constant internet access.
+
+## Methodology
+We developed 'FarmerNet', a lightweight convolutional neural network (CNN) that runs locally on Android devices. We trained it on a dataset of 5,000 images of diseased cassava leaves.
+
+## Experiments
+We deployed FarmerNet in 10 pilot farms in Uganda over 6 months. Farmers used the app to identify pests and received immediate organic treatment recommendations.
+
+## Findings
+Farms using FarmerNet saw a 25% increase in yield compared to the control group. The model achieved a 92% accuracy in identifying the variegated grasshopper, the most common pest.
+
+## Conclusion
+FarmerNet demonstrates that edge-AI can empower small-scale farmers without requiring high-end hardware.
+
+## References
+[1] Smith, J. (2022). AI for Good. Journal of Agri-Tech, 45(2), 112-120.
+[2] Uganda Agricultural Board. (2023). Annual Crop Report.
+  
+
+Return a JSON object with EXACTLY these fields:
+{
+  "title": "paper title",
+  "authors": ["author1", "author2"],
+  "year": "publication year or 'Unknown'",
+  "venue": "journal/conference or 'Unknown'",
+  "problem_statement": "what problem does this paper solve",
+  "hypothesis": "the main hypothesis or research question",
+  "methodology": "detailed description of the approach/method used",
+  "experiments": "what experiments or studies were conducted",
+  "key_findings": ["finding 1", "finding 2", "finding 3"],
+  "limitations": "known limitations mentioned in the paper"
+}
+
+Be precise and faithful to the source text. Do not hallucinate details not present in the paper.
+[00m
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agent.py", line 282, in execute_task
+    result = self.agent_executor.invoke(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 93, in invoke
+    formatted_answer = self._invoke_loop()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 185, in _invoke_loop
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 115, in _invoke_loop
+    answer = self.llm.call(
+             ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\llm.py", line 155, in call
+    response = litellm.completion(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\utils.py", line 1775, in wrapper
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\utils.py", line 1596, in wrapper
+    result = original_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\main.py", line 4408, in completion
+    raise exception_type(
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\main.py", line 1366, in completion
+    model, custom_llm_provider, dynamic_api_key, api_base = get_llm_provider(
+                                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 490, in get_llm_provider
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 471, in get_llm_provider
+    raise litellm.exceptions.BadRequestError(  # type: ignore
+litellm.exceptions.BadRequestError: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=llama-3.3-70b-versatile
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agent.py", line 282, in execute_task
+    result = self.agent_executor.invoke(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 93, in invoke
+    formatted_answer = self._invoke_loop()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 185, in _invoke_loop
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 115, in _invoke_loop
+    answer = self.llm.call(
+             ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\llm.py", line 155, in call
+    response = litellm.completion(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\utils.py", line 1775, in wrapper
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\utils.py", line 1596, in wrapper
+    result = original_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\main.py", line 4408, in completion
+    raise exception_type(
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\main.py", line 1366, in completion
+    model, custom_llm_provider, dynamic_api_key, api_base = get_llm_provider(
+                                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 490, in get_llm_provider
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 471, in get_llm_provider
+    raise litellm.exceptions.BadRequestError(  # type: ignore
+litellm.exceptions.BadRequestError: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=llama-3.3-70b-versatile
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Downloads\assignment-crewai\main.py", line 84, in <module>
+    main()
+  File "C:\Users\Admin\Downloads\assignment-crewai\main.py", line 65, in main
+    results = run_full_pipeline(trimmed, status_callback=cli_status)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\crew.py", line 142, in run_full_pipeline
+    analysis_output, analysis_review = run_agent_with_review(
+                                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\crew.py", line 84, in run_agent_with_review
+    result = crew.kickoff()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\crew.py", line 495, in kickoff
+    result = self._run_sequential_process()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\crew.py", line 599, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\crew.py", line 697, in _execute_tasks
+    task_output = task.execute_sync(
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\task.py", line 192, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\task.py", line 248, in _execute_core
+    result = agent.execute_task(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agent.py", line 294, in execute_task
+    result = self.execute_task(task, context, tools)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agent.py", line 294, in execute_task
+    result = self.execute_task(task, context, tools)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agent.py", line 293, in execute_task
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agent.py", line 282, in execute_task
+    result = self.agent_executor.invoke(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 93, in invoke
+    formatted_answer = self._invoke_loop()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 185, in _invoke_loop
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 115, in _invoke_loop
+    answer = self.llm.call(
+             ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\crewai\llm.py", line 155, in call
+    response = litellm.completion(**params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\utils.py", line 1775, in wrapper
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\utils.py", line 1596, in wrapper
+    result = original_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\main.py", line 4408, in completion
+    raise exception_type(
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\main.py", line 1366, in completion
+    model, custom_llm_provider, dynamic_api_key, api_base = get_llm_provider(
+                                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 490, in get_llm_provider
+    raise e
+  File "C:\Users\Admin\Downloads\assignment-crewai\.venv\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 471, in get_llm_provider
+    raise litellm.exceptions.BadRequestError(  # type: ignore
+litellm.exceptions.BadRequestError: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=llama-3.3-70b-versatile
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers

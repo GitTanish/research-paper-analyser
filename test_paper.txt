@@ -1,0 +1,23 @@
+# Test Paper: The Impact of Artificial Intelligence on Small-Scale Farming
+
+## Abstract
+This paper explores how low-cost AI solutions can improve crop yields for small-scale farmers in developing regions. We propose a mobile-based image recognition system for pest detection.
+
+## Introduction
+Small-scale farming accounts for 80% of food production in sub-Saharan Africa. However, pests destroy up to 40% of crops annually. Existing solutions are expensive or require constant internet access.
+
+## Methodology
+We developed 'FarmerNet', a lightweight convolutional neural network (CNN) that runs locally on Android devices. We trained it on a dataset of 5,000 images of diseased cassava leaves.
+
+## Experiments
+We deployed FarmerNet in 10 pilot farms in Uganda over 6 months. Farmers used the app to identify pests and received immediate organic treatment recommendations.
+
+## Findings
+Farms using FarmerNet saw a 25% increase in yield compared to the control group. The model achieved a 92% accuracy in identifying the variegated grasshopper, the most common pest.
+
+## Conclusion
+FarmerNet demonstrates that edge-AI can empower small-scale farmers without requiring high-end hardware.
+
+## References
+[1] Smith, J. (2022). AI for Good. Journal of Agri-Tech, 45(2), 112-120.
+[2] Uganda Agricultural Board. (2023). Annual Crop Report.
